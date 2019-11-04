@@ -1,0 +1,33 @@
+        <!-- logo -->
+        <div id="logo">
+            <img src="images/logo.svg" alt="">
+        </div>
+
+    <div class="main-menu">
+
+        
+    <!-- this will be filled in on the client side when we render our AJAX data -->
+    <section class="lightbox">
+        <div class="lb-content">
+            
+        </div>
+
+    </section>
+
+        <div id="click">
+            Click to see my favourite things
+        </div>
+
+
+        <div class="menu">
+        {{#each people}}
+
+             <a class="u-link" href="{{ID}}">
+                <img class="avatar" src="{{IMAGE}}" alt="{{ALT}}">
+            </a>
+
+        {{/each}}
+        </div>
+        
+
+   </div> 

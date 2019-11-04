@@ -1,0 +1,47 @@
+#logo{
+    margin-left: 20px;
+    width: 30%;
+}
+
+#logo img{
+    width: 40%;
+}
+
+.main-menu{
+    display: flex;
+    flex-direction: row;
+    float: right;
+}
+
+#click {
+    font-size: 1.5rem;
+    writing-mode: vertical-rl;
+text-orientation: mixed;
+margin-right: 120px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    float: right;
+}
+
+.menu img{
+    padding: 3px;
+    width: 50%;
+    -webkit-transition: width 1s, height 1s, -webkit-transform 1s; /* Safari */
+  transition: width 1s, height 1s, transform 1s;
+}
+
+.menu img:hover {
+    -webkit-transform: rotate(90deg); /* Safari */
+  transform: rotate(90deg);
+}
+
+.click{
+    float: right;
+}
+
+.image {
+    width: 23%;
+}

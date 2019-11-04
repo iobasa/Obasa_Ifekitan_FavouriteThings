@@ -1,0 +1,28 @@
+{
+  "name": "obasa_ifekitan_favouritethings",
+  "version": "1.0.0",
+  "description": "MY FAVOURITE THINGS",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iobasa/Obasa_Ifekitan_FavouriteThings.git"
+  },
+  "keywords": [
+    "classes",
+    "node",
+    "javascript"
+  ],
+  "author": "i_obasa",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.0.6",
+    "mysql": "^2.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  }
+}
