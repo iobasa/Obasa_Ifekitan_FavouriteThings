@@ -1,0 +1,42 @@
+.main-menu{
+    display: flex;
+    flex-direction: row;
+}
+
+.lightbox {
+    width: 80%;
+    display: none;
+    flex-direction: row;
+    margin-left: 50px;
+    margin-right: 0px;
+}
+
+.info{
+    margin-top: 200px;
+    font-size: 1.5rem;
+    width: 70%;
+    margin-right: 10px;
+}
+
+.info a{
+    color: brown;
+    text-decoration: none;
+}
+
+.avatar{
+    float: right;
+    width: 80px !important;
+}
+
+.u-link{
+    width: 15%;
+}
+
+.lb-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.show-lb {
+    display: flex; 
+}
