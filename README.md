@@ -1,3 +1,5 @@
+
+![Logo](/public/images/logo.svg)
 # Obasa_Ifekitan_FavouriteThings
 MY FAVOURITE THINGS
 
