@@ -2,7 +2,7 @@
 
 const myVM = (() => {
     // get the user buttons and fire off an async DB query with Fetch
-    let userButtons = document.querySelectorAll('.u-link'),
+    let userButtons = document.querySelectorAll('.u-link img'),
         lightbox = document.querySelector('.lightbox');
 
     function renderSocialMedia(socialMedia) {
@@ -11,26 +11,26 @@ const myVM = (() => {
                 </ul>`
     }
     
-    function parseUserData(person) { //person is a database result
+    function parseUserData(things) { //things is a database result
         let targetDiv = document.querySelector('.lb-content'),
             targetImg = lightbox.querySelector('img');
 
         let bioContent = `
         <div class="image">
-        <img src="${person.IMAGE}" alt="favs">
+        <img src="${things.IMAGE}" alt="favs">
         </div>
         <div class="info">
-        <p>${person.DESCRIPTION}</p>
-        <a href="${person.VIDEO}">Click to view video</a>
+        <p>${things.DESCRIPTION}</p>
+        <a href="${things.VIDEO}">Click to view video</a>
         </div>
         `;
 
-     // ${renderSocialMedia(person.social)}
+     // ${renderSocialMedia(things.social)}
 
         console.log(bioContent);
 
         targetDiv.innerHTML = bioContent;
-        targetImg.src = person.imgsrc;
+        targetImg.src = things.imgsrc;
 
         lightbox.classList.add('show-lb');
 
@@ -41,8 +41,8 @@ const myVM = (() => {
         event.preventDefault(); 
         //debugger;
         // find the image closest to the anchor tag and get its src property
-        let imgSrc = this.previousElementSibling.getAttribute('src');
-        let url = `/${this.getAttribute('href')}`; // /1
+        let imgSrc = this.getAttribute('src');
+        let url = `/users/${this.parentElement.getAttribute('href')}`; // /1
 
         fetch(url) // go get the data
             .then(res => res.json()) // parse the json result inta a plain object

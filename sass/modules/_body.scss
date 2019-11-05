@@ -1,5 +1,78 @@
 #logo{
     margin-left: 20px;
+    width: 100%;
+}
+
+#logo img{
+    width: 40%;
+}
+
+.main-menu{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#click{
+    display:none;
+}
+
+.click {
+    font-size: 1rem;
+text-orientation: mixed;
+text-align: center;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.image {
+    width: 23%;
+}
+
+@media screen and (min-width: 768px) {
+    #logo{
+        margin-left: 20px;
+        width: 100%;
+    }
+    
+    #logo img{
+        width: 40%;
+    }
+    
+    .main-menu{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #click{
+        display:none;
+    }
+    
+    .click {
+        font-size: 2rem;
+    text-orientation: mixed;
+    text-align: center;
+    }
+    
+    .menu{
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+    }
+    
+    .image {
+        width: 23%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+#logo{
+    margin-left: 20px;
     width: 30%;
 }
 
@@ -13,7 +86,12 @@
     float: right;
 }
 
+.click{
+    display: none;
+}
+
 #click {
+    display: flex;
     font-size: 1.5rem;
     writing-mode: vertical-rl;
 text-orientation: mixed;
@@ -28,7 +106,7 @@ margin-right: 120px;
 
 .menu img{
     padding: 3px;
-    width: 50%;
+    width: 30%;
     -webkit-transition: width 1s, height 1s, -webkit-transform 1s; /* Safari */
   transition: width 1s, height 1s, transform 1s;
 }
@@ -44,4 +122,5 @@ margin-right: 120px;
 
 .image {
     width: 23%;
+}
 }

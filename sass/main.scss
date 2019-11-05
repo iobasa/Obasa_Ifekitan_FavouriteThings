@@ -1,5 +1,6 @@
 // do your imports first, so that they're available everywhere
 @import "_vars";
+@import "modules/_errors";
 @import "modules/_navbar";
 @import "modules/_lightbox";
 @import "modules/_body";
@@ -9,7 +10,7 @@ body {
 font-weight: 400;
 font-style: normal;
   font-size: 5rem;
-  color: black;
+  color: $body-font;
 }
 
 .hidden {
