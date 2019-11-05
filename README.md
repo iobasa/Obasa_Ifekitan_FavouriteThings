@@ -4,7 +4,7 @@
 MY FAVOURITE THINGS
 
 ## Description
-A cool way to show my favourite things using Node.Js
+3 things I love and create an app that showcases those things.
 
 ## Getting Started
 
